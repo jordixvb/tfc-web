@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tempesta F.C. — Plantilla</title>
+  <meta name="description" content="Plantilla oficial de Tempesta F.C. — Once titular, suplentes y esquema táctico." />
+  <style>
+    :root{--bg:#0b0b0f;--panel:#12121a;--ink:#eaeaf2;--muted:#a0a0b8;--accent:#2dd4bf;--line:#232334;--grass:#0a3d1c;--linefield:#eaeaf2}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;background:rgba(18,18,26,.8);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+    .wrap{max-width:1100px;margin:auto;padding:16px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}
+    .crest{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#22d3ee,#a78bfa)}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{font-size:14px;color:#c8c8de}
+    nav a.active{color:var(--ink);font-weight:600}
+    h1{text-align:center;margin:16px 0;font-size:28px}
+    h2{margin:14px 0 8px;font-size:20px;color:#d6d6ea}
+
+    /* Campo de fútbol */
+    .pitch{background:var(--grass);border:2px solid var(--linefield);border-radius:16px;padding:20px;display:grid;grid-template-rows:repeat(5,1fr);gap:30px;position:relative;overflow:hidden}
+    .line{display:flex;justify-content:center;gap:40px;z-index:1}
+    .player{display:flex;flex-direction:column;align-items:center;gap:6px;color:#eaeaf2;text-align:center}
+    .player img{width:120px;height:120px;object-fit:cover;border-radius:12px;border:3px solid var(--accent)}
+    .name{font-weight:700}
+    .dorsal{display:inline-block;margin-top:2px;font-size:13px;padding:2px 8px;border-radius:6px;background:#22d3ee33;color:#22d3ee;font-weight:700}
+
+    .subs{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin-top:24px}
+    .sub{background:#0f0f16;border:1px solid #2a2a3a;border-radius:12px;padding:12px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
+    .sub img{width:100px;height:100px;object-fit:cover;border-radius:10px;border:2px solid var(--accent)}
+    .sub .name{font-weight:600}
+    .sub .dorsal{font-size:13px;padding:2px 8px;border-radius:6px;background:#22d3ee33;color:#22d3ee;font-weight:700}
+
+    footer{margin:40px 0 20px;text-align:center;color:#8e8ea3;font-size:12px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:16px">
+      <div class="brand"><div class="crest" aria-hidden="true"></div> Tempesta F.C.</div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="estadisticas.html">Estadísticas</a>
+        <a class="active" href="plantilla.html">Plantilla</a>
+        <a href="clips.html">Clips & Edits</a>
+        <a href="historial.html">Historial</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Plantilla Tempesta F.C.</h1>
+
+    <h2>Once Titular (4-3-1-2)</h2>
+    <div class="pitch">
+      <!-- Portero abajo -->
+      <div class="line">
+        <div class="player"><img src="https://via.placeholder.com/120" alt="Portero" /><div class="name">x</div><div class="dorsal">#1</div></div>
+      </div>
+
+      <!-- Defensas -->
+      <div class="line">
+        <div class="player"><img src="https://via.placeholder.com/120" alt="LI" /><div class="name">x</div><div class="dorsal">#3</div></div>
+        <div class="player"><img src="https://via.placeholder.com/120" alt="Alessia" /><div class="name">Alessia</div><div class="dorsal">#4</div></div>
+        <div class="player"><img src="https://via.placeholder.com/120" alt="Omuamua" /><div class="name">Omuamua</div><div class="dorsal">#5</div></div>
+        <div class="player"><img src="https://via.placeholder.com/120" alt="Andrea Cano" /><div class="name">Andrea Cano</div><div class="dorsal">#2</div></div>
+      </div>
+
+      <!-- Mediocentros -->
+      <div class="line">
+        <div class="player"><img src="https://via.placeholder.com/120" alt="MC" /><div class="name">x</div><div class="dorsal">#6</div></div>
+        <div class="player"><img src="https://via.placeholder.com/120" alt="MC" /><div class="name">x</div><div class="dorsal">#7</div></div>
+        <div class="player"><img src="https://via.placeholder.com/120" alt="Belrarej" /><div class="name">Belrarej</div><div class="dorsal">#10</div></div>
+      </div>
+
+      <!-- MCO -->
+      <div class="line">
+        <div class="player"><img src="https://via.placeholder.com/120" alt="Markestein" /><div class="name">Markestein</div><div class="dorsal">#8</div></div>
+      </div>
+
+      <!-- Delanteros -->
+      <div class="line">
+        <div class="player"><img src="https://via.placeholder.com/120" alt="Salim" /><div class="name">Salim</div><div class="dorsal">#9</div></div>
+        <div class="player"><img src="https://via.placeholder.com/120" alt="Van Beek" /><div class="name">Jordi Van Beek</div><div class="dorsal">#14</div></div>
+      </div>
+    </div>
+
+    <h2>Suplentes</h2>
+    <div class="subs">
+      <div class="sub"><img src="https://via.placeholder.com/100" alt="Fierro" /><div class="name">Fierro</div><div class="dorsal">#19</div></div>
+      <div class="sub"><img src="https://via.placeholder.com/100" alt="Jugador" /><div class="name">x</div><div class="dorsal">#x</div></div>
+      <div class="sub"><img src="https://via.placeholder.com/100" alt="Jugador" /><div class="name">x</div><div class="dorsal">#x</div></div>
+      <div class="sub"><img src="https://via.placeholder.com/100" alt="Jugador" /><div class="name">x</div><div class="dorsal">#x</div></div>
+      <div class="sub"><img src="https://via.placeholder.com/100" alt="Jugador" /><div class="name">x</div><div class="dorsal">#x</div></div>
+      <div class="sub"><img src="https://via.placeholder.com/100" alt="Jugador" /><div class="name">x</div><div class="dorsal">#x</div></div>
+      <div class="sub"><img src="https://via.placeholder.com/100" alt="Jugador" /><div class="name">x</div><div class="dorsal">#x</div></div>
+    </div>
+  </main>
+
+  <footer>
+    © Tempesta F.C. - página administrada por el encargado de marketing Van Beek Junior
+  </footer>
+</body>
+</html>

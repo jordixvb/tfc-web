@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tempesta F.C. — Inicio</title>
+  <meta name="description" content="Página oficial no oficial del club Tempesta F.C. Fundado en 1899. Historia, estadio y rivalidad." />
+  <style>
+    :root{--bg:#0b0b0f;--panel:#12121a;--ink:#eaeaf2;--muted:#a0a0b8;--accent:#2dd4bf;}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;background:rgba(18,18,26,.8);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #232334}
+    .wrap{max-width:1100px;margin:auto;padding:16px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}
+    .crest{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#22d3ee,#a78bfa)}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{font-size:14px;color:#c8c8de}
+    nav a.active{color:var(--ink);font-weight:600}
+    .grid{display:grid;gap:20px}
+    @media(min-width:900px){.grid{grid-template-columns:2fr 1fr}}
+    .card{background:var(--panel);border:1px solid #232334;border-radius:14px;padding:18px}
+    .hero{padding:40px 0}
+    h1{font-size:34px;margin:8px 0 10px}
+    h2{font-size:18px;margin:0 0 10px;color:#d6d6ea}
+    p{margin:0 0 12px;color:#d7d7e5}
+    .muted{color:var(--muted)}
+    .list{padding-left:18px;margin:0}
+    .list li{margin:6px 0}
+    footer{margin:40px 0 20px;text-align:center;color:#8e8ea3;font-size:12px}
+    .pill{display:inline-block;font-size:12px;padding:4px 8px;border:1px solid #2a2a3a;border-radius:999px;background:#101019;color:#cfcfe6}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:16px">
+      <div class="brand"><div class="crest" aria-hidden="true"></div> Tempesta F.C.</div>
+      <nav>
+        <a class="active" href="index.html">Inicio</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="estadisticas.html">Estadísticas</a>
+        <a href="plantilla.html">Plantilla</a>
+        <a href="clips.html">Clips & Edits</a>
+        <a href="historial.html">Historial</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <span class="pill">Fundado en 1899</span>
+      <h1>Tempesta F.C.</h1>
+      <p class="muted">Club ubicado en la provincia de Alicante. Estadio Avenida Diputación. Rival histórico: Unión Leperas.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Historia del club</h2>
+        <p>Tempesta F.C. nace en 1899 de la mano de <strong>Gerard</strong>, empresario nacido en Lepe que veraneaba en Benidorm. Inspirado por el auge del fútbol en la costa mediterránea, Gerard impulsó un proyecto con identidad propia: juego valiente, cantera activa y afición cercana.</p>
+        <p>Con el paso de las décadas, Tempesta consolidó un estilo ofensivo y formador, compitiendo en categorías nacionales y protagonizando ascensos destacados.</p>
+      </article>
+
+      <aside class="card">
+        <h2>Identidad</h2>
+        <ul class="list">
+          <li><strong>Ciudad:</strong> Provincia de Alicante</li>
+          <li><strong>Estadio:</strong> Estadio Avenida Diputación</li>
+          <li><strong>Rival:</strong> Unión Leperas</li>
+          <li><strong>Colores:</strong> Oscuros con acentos turquesa y violeta</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="grid" style="margin-top:20px">
+      <article class="card">
+        <h2>Estadio Avenida Diputación</h2>
+        <p>El Estadio Avenida Diputación es la casa de Tempesta. Un recinto compacto, con gran presión ambiental y una grada cercana al césped que hace difícil la visita de cualquier rival.</p>
+      </article>
+
+      <aside class="card">
+        <h2>Rivalidad con Unión Leperas</h2>
+        <p>Los duelos con <strong>Unión Leperas</strong> marcan el calendario. Partidos intensos, con tradición y orgullo. La afición considera este enfrentamiento como la prueba de carácter del equipo cada temporada.</p>
+      </aside>
+    </section>
+
+    <section class="card" style="margin-top:20px">
+      <h2>Presente deportivo</h2>
+      <p>Tempesta compite en categoría nacional. La meta: consolidar proyecto, potenciar la cantera y mantener un fútbol reconocible. En esta web podrás seguir <a href="noticias.html">noticias</a>, consultar <a href="estadisticas.html">estadísticas</a> y conocer la <a href="plantilla.html">plantilla</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    © Tempesta F.C. - página administrada por el encargado de marketing Van Beek Junior
+  </footer>
+</body>
+</html>

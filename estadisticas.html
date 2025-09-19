@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tempesta F.C. — Estadísticas</title>
+  <meta name="description" content="Estadísticas por jugador de Tempesta F.C. por temporada." />
+  <style>
+    :root{--bg:#0b0b0f;--panel:#12121a;--ink:#eaeaf2;--muted:#a0a0b8;--accent:#2dd4bf;--line:#232334}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;background:rgba(18,18,26,.8);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+    .wrap{max-width:1100px;margin:auto;padding:16px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}
+    .crest{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#22d3ee,#a78bfa)}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{font-size:14px;color:#c8c8de}
+    nav a.active{color:var(--ink);font-weight:600}
+    h1{font-size:28px;margin:8px 0 16px;text-align:center}
+    h2{font-size:18px;margin:20px 0 10px;color:#d6d6ea}
+
+    /* Seasons */
+    .season{border:1px solid var(--line);border-radius:16px;padding:16px;margin:18px 0;background:var(--panel)}
+    .season.cyan{box-shadow:0 0 0 1px rgba(34,211,238,0.15) inset}
+    .season.purple{box-shadow:0 0 0 1px rgba(167,139,250,0.15) inset}
+    .season-title{display:inline-block;font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid #2a2a3a;background:#101019;color:#cfcfe6;margin-bottom:12px}
+
+    /* Comparison grid */
+    .statgrid{display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;gap:8px;align-items:center}
+    .statgrid .head{font-size:13px;font-weight:700;color:#e8e8f6;border-bottom:1px solid #1e1e2a;padding:8px 0}
+    .statgrid .label{color:#c8c8de;padding:10px 0;border-bottom:1px dashed #1e1e2a}
+    .statgrid .val{font-weight:600;padding:10px 0;border-bottom:1px dashed #1e1e2a}
+    .avatar{width:56px;height:56px;border-radius:12px;background:#0f0f16;border:1px solid var(--line);overflow:hidden;margin-right:8px}
+    .phead{display:flex;align-items:center;gap:10px}
+    .pmeta{font-size:12px;color:var(--muted)}
+    footer{margin:40px 0 20px;text-align:center;color:#8e8ea3;font-size:12px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:16px">
+      <div class="brand"><div class="crest" aria-hidden="true"></div> Tempesta F.C.</div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="noticias.html">Noticias</a>
+        <a class="active" href="estadisticas.html">Estadísticas</a>
+        <a href="plantilla.html">Plantilla</a>
+        <a href="clips.html">Clips & Edits</a>
+        <a href="historial.html">Historial</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Estadísticas por jugador</h1>
+
+    <!-- Temporada 2025/26 (arriba, a 0) -->
+    <section class="season cyan">
+      <span class="season-title">Temporada 2025/26</span>
+      <div class="statgrid">
+        <div></div>
+        <div class="head">
+          <div class="phead">
+            <div class="avatar"><img src="https://via.placeholder.com/200x200" alt="Van Beek" style="width:100%;height:100%;object-fit:cover"></div>
+            <div>
+              Van Beek
+              <div class="pmeta">DC / Falso 9 / Extremo Izquierdo</div>
+            </div>
+          </div>
+        </div>
+        <div class="head">
+          <div class="phead">
+            <div class="avatar"><img src="https://via.placeholder.com/200x200" alt="Salim" style="width:100%;height:100%;object-fit:cover"></div>
+            <div>
+              Salim
+              <div class="pmeta">DC</div>
+            </div>
+          </div>
+        </div>
+        <div class="head">
+          <div class="phead">
+            <div class="avatar"><img src="https://via.placeholder.com/200x200" alt="Markestein" style="width:100%;height:100%;object-fit:cover"></div>
+            <div>
+              Markestein
+              <div class="pmeta">MCO / Extremo Derecho</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="label">Apariciones</div><div class="val">0</div><div class="val">0</div><div class="val">0</div>
+        <div class="label">Goles</div><div class="val">0</div><div class="val">0</div><div class="val">0</div>
+        <div class="label">Asistencias</div><div class="val">0</div><div class="val">0</div><div class="val">0</div>
+        <div class="label">MVP</div><div class="val">0</div><div class="val">0</div><div class="val">0</div>
+        <div class="label">Tarjetas rojas</div><div class="val">0</div><div class="val">0</div><div class="val">0</div>
+        <div class="label">Precisión de pase</div><div class="val">0%</div><div class="val">0%</div><div class="val">0%</div>
+        <div class="label">Tiros a puerta</div><div class="val">0%</div><div class="val">0%</div><div class="val">0%</div>
+        <div class="label">G/A Total</div><div class="val">0</div><div class="val">0</div><div class="val">0</div>
+        <div class="label">Goles/Partido</div><div class="val">0.00</div><div class="val">0.00</div><div class="val">0.00</div>
+        <div class="label">Asistencias/Partido</div><div class="val">0.00</div><div class="val">0.00</div><div class="val">0.00</div>
+        <div class="label">G+A por Partido</div><div class="val">0.00</div><div class="val">0.00</div><div class="val">0.00</div>
+        <div class="label">Rating</div><div class="val">0.00</div><div class="val">0.00</div><div class="val">0.00</div>
+        <div class="label">Hat-tricks</div><div class="val">0</div><div class="val">0</div><div class="val">0</div>
+        <div class="label">Tiros / Gol</div><div class="val">0</div><div class="val">0</div><div class="val">0</div>
+      </div>
+    </section>
+
+    <!-- Temporada 2024/25 (debajo, datos reales) -->
+    <section class="season purple">
+      <span class="season-title">Temporada 2024/25</span>
+      <div class="statgrid">
+        <div></div>
+        <div class="head">
+          <div class="phead">
+            <div class="avatar"><img src="https://via.placeholder.com/200x200" alt="Van Beek" style="width:100%;height:100%;object-fit:cover"></div>
+            <div>
+              Van Beek
+              <div class="pmeta">DC / Falso 9 / Extremo Izquierdo</div>
+            </div>
+          </div>
+        </div>
+        <div class="head">
+          <div class="phead">
+            <div class="avatar"><img src="https://via.placeholder.com/200x200" alt="Salim" style="width:100%;height:100%;object-fit:cover"></div>
+            <div>
+              Salim
+              <div class="pmeta">DC</div>
+            </div>
+          </div>
+        </div>
+        <div class="head">
+          <div class="phead">
+            <div class="avatar"><img src="https://via.placeholder.com/200x200" alt="Markestein" style="width:100%;height:100%;object-fit:cover"></div>
+            <div>
+              Markestein
+              <div class="pmeta">MCO / Extremo Derecho</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="label">Apariciones</div><div class="val">72</div><div class="val">74</div><div class="val">57</div>
+        <div class="label">Goles</div><div class="val">66</div><div class="val">45</div><div class="val">22</div>
+        <div class="label">Asistencias</div><div class="val">34</div><div class="val">35</div><div class="val">18</div>
+        <div class="label">MVP</div><div class="val">15</div><div class="val">10</div><div class="val">3</div>
+        <div class="label">Tarjetas rojas</div><div class="val">2</div><div class="val">0</div><div class="val">2</div>
+        <div class="label">Precisión de pase</div><div class="val">77%</div><div class="val">71%</div><div class="val">68%</div>
+        <div class="label">Tiros a puerta</div><div class="val">27%</div><div class="val">20%</div><div class="val">17%</div>
+        <div class="label">G/A Total</div><div class="val">100</div><div class="val">80</div><div class="val">40</div>
+        <div class="label">Goles/Partido</div><div class="val">0.92</div><div class="val">0.61</div><div class="val">0.39</div>
+        <div class="label">Asistencias/Partido</div><div class="val">0.47</div><div class="val">0.47</div><div class="val">0.32</div>
+        <div class="label">G+A por Partido</div><div class="val">1.39</div><div class="val">1.08</div><div class="val">0.70</div>
+        <div class="label">Rating</div><div class="val">8.00</div><div class="val">7.80</div><div class="val">7.50</div>
+        <div class="label">Hat-tricks</div><div class="val">5</div><div class="val">1</div><div class="val">1</div>
+        <div class="label">Tiros / Gol</div><div class="val">3.6</div><div class="val">5.0</div><div class="val">x</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © Tempesta F.C. - página administrada por el encargado de marketing Van Beek Junior
+  </footer>
+</body>
+</html>
